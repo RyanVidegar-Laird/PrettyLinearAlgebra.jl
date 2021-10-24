@@ -1,3 +1,7 @@
+"""
+    matex(input::Vector)
+Takes a one-dimensional vector as input and formats it for LaTeX display.
+"""
 function matex(input::Vector)
 	S = ""
 	for i in input[1:end-1]
@@ -10,6 +14,10 @@ function matex(input::Vector)
 	S
 end
 
+"""
+    matex(input::Matrix)
+Takes a two-dimensional matrix as input and formats it for LaTeX display.
+"""
 function matex(input::Matrix)
 	S = ""
 	rows = collect(eachrow(input))
