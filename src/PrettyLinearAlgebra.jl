@@ -1,5 +1,7 @@
 module PrettyLinearAlgebra
 
-# Write your package code here.
+include("matex.jl")
+export  matex
+
 
 end
